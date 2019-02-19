@@ -1,0 +1,27 @@
+{
+  "name": "sol-assert",
+  "version": "1.0.0",
+  "description": "Helper assertion library for Solidity testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwalintukan/sol-assert.git"
+  },
+  "keywords": [
+    "js",
+    "solidity",
+    "assert",
+    "test",
+    "testing",
+    "unit test"
+  ],
+  "author": "Deric Walintukan <deric.walintukan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwalintukan/sol-assert/issues"
+  },
+  "homepage": "https://github.com/dwalintukan/sol-assert#readme"
+}
