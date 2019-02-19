@@ -11,7 +11,7 @@ npm install sol-assert
 const sassert = require('sol-assert')
 ```
 
-## .revert
+### .revert
 ```js
 try {
     // your function call you expect to throw revert
@@ -20,7 +20,7 @@ try {
 }
 ```
 
-## .invalidOpcode
+### .invalidOpcode
 ```js
 try {
     // your function call you expect to throw invalid opcode
@@ -29,7 +29,7 @@ try {
 }
 ```
 
-## .event
+### .event
 ```js
 function test1() {
     // Calling ERC20 transfer
