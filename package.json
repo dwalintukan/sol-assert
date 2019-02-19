@@ -2,7 +2,7 @@
   "name": "sol-assert",
   "version": "1.0.0",
   "description": "Helper assertion library for Solidity testing",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "npm test"
   },
@@ -23,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/dwalintukan/sol-assert/issues"
   },
-  "homepage": "https://github.com/dwalintukan/sol-assert#readme"
+  "homepage": "https://github.com/dwalintukan/sol-assert#readme",
+  "dependencies": {
+    "web3": "^1.0.0-beta.46"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.0"
+  }
 }
