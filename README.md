@@ -1,6 +1,6 @@
 # sol-assert
 
-Helper assertion library for Solidity testing
+Helper assertion library for Solidity JS testing.
 
 ## Install
 
