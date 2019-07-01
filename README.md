@@ -1,35 +1,45 @@
 # sol-assert
+
 Helper assertion library for Solidity testing
 
 ## Install
+
 ```bash
-npm install sol-assert
+npm install --save-dev sol-assert
 ```
 
 ## Usage
+
 ```js
 const sassert = require('sol-assert')
 ```
 
 ### .revert
+
 ```js
-try {
-    // your function call you expect to throw revert
-} catch (e) {
-    sassert.revert(e)
-}
+// Testing for revert
+await sassert.revert(myContract.methods.myFunc().send())
+
+// Testing for specific error message
+await sassert.revert(
+    myContract.methods.myFunc().send(),
+    'Text that should be from the thrown error in the contract')
 ```
 
 ### .invalidOpcode
+
 ```js
-try {
-    // your function call you expect to throw invalid opcode
-} catch (e) {
-    sassert.invalidOpcode(e)
-}
+// Testing for invalid opcode
+await sassert.invalidOpcode(myContract.methods.myFunc().send())
+
+// Testing for specific error message
+await sassert.invalidOpcode(
+    myContract.methods.myFunc().send(),
+    'Text that should be from the thrown error in the contract')
 ```
 
 ### .event
+
 ```js
 function test1() {
     // Calling ERC20 transfer
