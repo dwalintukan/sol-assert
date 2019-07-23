@@ -1,3 +1,5 @@
+Moved to Gitlab https://gitlab.com/dwalintukan/sol-assert
+
 # sol-assert
 
 Helper assertion library for Solidity JS testing.
